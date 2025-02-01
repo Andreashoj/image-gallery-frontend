@@ -1,0 +1,8 @@
+﻿[build]
+  command = "npm run build && npm run serve:ssr:frontend"
+  publish = "dist/frontend/browser"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
